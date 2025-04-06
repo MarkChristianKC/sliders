@@ -1,50 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LUT Before & After Slider</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- TwentyTwenty CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/twentytwenty.min.css" integrity="sha512-PY+4+yAfAV8HL2D0yt9PoxhKx81JbOWM+g2qzBGVp1TIfgkAcxBeSGNaY9sHdcdbweWOTPC9Bo91k1RuKTImJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <title>Before & After LUT Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/before-after-slider.min.css" />
   <style>
     body {
-      font-family: sans-serif;
       background: #fff;
-      padding: 40px 20px;
+      font-family: sans-serif;
+      padding: 40px;
       text-align: center;
     }
-    .twentytwenty-container {
-      max-width: 1000px;
-      margin: 40px auto;
+    h1 {
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+    .slider-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
+  <h1>🧪 Before & After LUT Example</h1>
+  <div class="slider-wrapper">
+    <before-after-slider>
+      <img slot="before" src="https://images.squarespace-cdn.com/content/v1/65b43a80360aee137fdffe37/b7541dc0-8259-4772-a479-b26caa38251a/Timeline+1_01_00_29_111.jpg?format=2500w" />
+      <img slot="after" src="https://images.squarespace-cdn.com/content/v1/65b43a80360aee137fdffe37/4b25555c-f619-43bd-999a-19908f4a80d7/Timeline+1_01_00_29_11.jpg?format=2500w" />
+    </before-after-slider>
+  </div>
 
-<h2>🎞️ Before & After LUT Example</h2>
-
-<div class="twentytwenty-container">
-  <img src="https://images.squarespace-cdn.com/content/v1/65b43a80360aee137fdffe37/b7541dc0-8259-4772-a479-b26caa38251a/Timeline+1_01_00_29_111.jpg?format=2500w" alt="Before">
-  <img src="https://images.squarespace-cdn.com/content/v1/65b43a80360aee137fdffe37/4b25555c-f619-43bd-999a-19908f4a80d7/Timeline+1_01_00_29_11.jpg?format=2500w" alt="After">
-</div>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJ+Y3FxvAe9BrPzKffP5g0xP1Mw0j1si4coAY=" crossorigin="anonymous"></script>
-
-<!-- jQuery Event Move -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/2.0.0/jquery.event.move.min.js" integrity="sha512-13rZT6y6vjmvYFoZw2/Nx4K0fRRON7JPDMFbX8T4cRBmkYM5doM3csc8ndNDe8s3Rp2V2LfQStxfJJMuGEynIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- TwentyTwenty JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/jquery.twentytwenty.min.js" integrity="sha512-7+u4qt2Cj+oU9phRr8zObB7jY9mAfMEqER7xFvX1tZ65x9YtW6u9ZwHBi8zZ9uFzDK5tuRDW0cwZm19JeYtHyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script>
-  window.addEventListener("load", function() {
-    $(".twentytwenty-container").twentytwenty();
-  });
-</script>
-
+  <script type="module" src="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/before-after-slider.min.js"></script>
 </body>
 </html>
