@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before & After Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/twentytwenty/css/twentytwenty.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .twentytwenty-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Before & After LUT Example</h2>
+
+<div class="twentytwenty-container">
+  <img src="https://images.squarespace-cdn.com/content/v1/65b43a80360aee137fdffe37/b7541dc0-8259-4772-a479-b26caa38251a/Timeline+1_01_00_29_111.jpg?format=2500w" alt="Before">
+  <img src="https://images.squarespace-cdn.com/content/v1/65b43a80360aee137fdffe37/4b25555c-f619-43bd-999a-19908f4a80d7/Timeline+1_01_00_29_11.jpg?format=2500w" alt="After">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.event.move@2.0.0/jquery.event.move.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/twentytwenty/js/jquery.twentytwenty.min.js"></script>
+<script>
+  $(function(){
+    $(".twentytwenty-container").twentytwenty();
+  });
+</script>
+
+</body>
+</html>
